@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f93c0bdd-8778-49fe-a2c1-eb6a432c3079" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/zhangan.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/DawnApi/auth/BaseAuth.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DawnApi/auth/BaseAuth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/DawnApi/auth/Basic.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DawnApi/auth/Basic.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/DawnApi/auth/OAuth.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DawnApi/auth/OAuth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/DawnApi/contract/AuthContract.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DawnApi/contract/AuthContract.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/DawnApi/controller/Wiki.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DawnApi/controller/Wiki.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/DawnApi/exception/UnauthorizedException.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DawnApi/exception/UnauthorizedException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/DawnApi/facade/ApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DawnApi/facade/ApiController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/DawnApi/facade/Doc.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DawnApi/facade/Doc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/DawnApi/facade/Factory.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DawnApi/facade/Factory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/DawnApi/facade/Send.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DawnApi/facade/Send.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/DawnApi/helper/Tree.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DawnApi/helper/Tree.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/DawnApi/route/DawnRoute.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DawnApi/route/DawnRoute.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/DawnApi/tpl/apiInfo.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/app/DawnApi/tpl/apiInfo.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/DawnApi/tpl/apiMarkdown.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/app/DawnApi/tpl/apiMarkdown.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/DawnApi/tpl/main.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/app/DawnApi/tpl/main.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/admin/view/author/readcount.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/admin/view/author/readcount.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/admin/view/tomessages/publish.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/admin/view/tomessages/publish.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/auth/BasicAuth.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/auth/BasicAuth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/auth/OauthAuth.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/auth/OauthAuth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/controller/v1/Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/controller/v1/Auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/controller/v1/Base.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/controller/v1/Base.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/controller/v1/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/controller/v1/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/controller/v1/text.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/controller/v1/text.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/controller/v2/Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/controller/v2/Auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/controller/v2/Base.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/controller/v2/Base.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/controller/v2/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/controller/v2/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/controller/v2/text.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/controller/v2/text.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/model/OsaUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/model/OsaUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/route.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/route.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/public/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/admin/admin_thumb/20180723/67890bfbdd48512be87a40a6ac7b4b3e.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/admin/admin_thumb/20180723/67890bfbdd48512be87a40a6ac7b4b3e.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/admin/article_thumb/20180710/7357c2dd332721133e87dc9cc825e5a7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/admin/article_thumb/20180710/7357c2dd332721133e87dc9cc825e5a7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/admin/article_thumb/20180710/c486f3d7555362a5d4d9ba62fa3ecaa9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/admin/article_thumb/20180710/c486f3d7555362a5d4d9ba62fa3ecaa9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/admin/article_thumb/20180725/0bcd92c1232a56905f1ac8feb33d20f1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/admin/article_thumb/20180725/0bcd92c1232a56905f1ac8feb33d20f1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/admin/article_thumb/20180725/da64bcb9c39455bbcccca761d66fff4d.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/admin/article_thumb/20180725/da64bcb9c39455bbcccca761d66fff4d.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/admin/article_thumb/20180726/01a670a76e5edd90e01e0a4be2b7955d.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/admin/article_thumb/20180726/01a670a76e5edd90e01e0a4be2b7955d.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/admin/article_thumb/20180726/2fe68ffbf053e6d4b0e2814e562fdf13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/admin/article_thumb/20180726/2fe68ffbf053e6d4b0e2814e562fdf13.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/admin/article_thumb/20180726/3bb2b3e42d982bfaf01e3cae8298cb43.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/admin/article_thumb/20180726/3bb2b3e42d982bfaf01e3cae8298cb43.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/admin/article_thumb/20180726/769076ffb6080878cf59147ad0096928.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/admin/article_thumb/20180726/769076ffb6080878cf59147ad0096928.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/admin/article_thumb/20180726/9110065c58b158c61ef625f1d4c42c12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/admin/article_thumb/20180726/9110065c58b158c61ef625f1d4c42c12.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/admin/article_thumb/20180726/95547e8c52121afc6e82a2c84554d1f0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/admin/article_thumb/20180726/95547e8c52121afc6e82a2c84554d1f0.jpg" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="route.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/route.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="552">
+              <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+              <folding>
+                <element signature="e#6#80#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/database.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/route.php" />
+        <option value="$PROJECT_DIR$/app/database.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="PhpDebugGeneral" xdebug_debug_port="9001" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
+    <include_path>
+      <path value="" />
+    </include_path>
+  </component>
+  <component name="PhpXdebugProxy" ide_key="PHPSTORM" host="localhost" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>AngularJS</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="book.cn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="book.cn" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f93c0bdd-8778-49fe-a2c1-eb6a432c3079" name="Default" comment="" />
+      <created>1533198604338</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1533198604338</updated>
+      <workItem from="1533198605860" duration="1392000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1392000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32969698" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" weight="0.32969698" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32969698" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/route.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+          <folding>
+            <element signature="e#6#80#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="Copyright.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
