@@ -17,6 +17,7 @@ define('APP_PATH', __DIR__ . '/../app/');
 define('TPLAY_VERSION', '1.3.3');
 //重定义扩展类库目录
 define('EXTEND_PATH', __DIR__ . '/../extend/');
+dump(EXTEND_PATH);die;
 //重定义第三方类库目录
 define('VENDOR_PATH', __DIR__ . '/../vendor/');
 // 加载框架引导文件
