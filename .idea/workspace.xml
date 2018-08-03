@@ -2,51 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f93c0bdd-8778-49fe-a2c1-eb6a432c3079" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/zhangan.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DawnApi/auth/BaseAuth.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DawnApi/auth/BaseAuth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DawnApi/auth/Basic.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DawnApi/auth/Basic.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DawnApi/auth/OAuth.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DawnApi/auth/OAuth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DawnApi/contract/AuthContract.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DawnApi/contract/AuthContract.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DawnApi/controller/Wiki.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DawnApi/controller/Wiki.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DawnApi/exception/UnauthorizedException.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DawnApi/exception/UnauthorizedException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DawnApi/facade/ApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DawnApi/facade/ApiController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DawnApi/facade/Doc.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DawnApi/facade/Doc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DawnApi/facade/Factory.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DawnApi/facade/Factory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DawnApi/facade/Send.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DawnApi/facade/Send.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DawnApi/helper/Tree.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DawnApi/helper/Tree.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DawnApi/route/DawnRoute.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DawnApi/route/DawnRoute.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DawnApi/tpl/apiInfo.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/app/DawnApi/tpl/apiInfo.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DawnApi/tpl/apiMarkdown.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/app/DawnApi/tpl/apiMarkdown.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DawnApi/tpl/main.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/app/DawnApi/tpl/main.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/admin/view/author/readcount.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/admin/view/author/readcount.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/admin/view/tomessages/publish.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/admin/view/tomessages/publish.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/auth/BasicAuth.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/auth/BasicAuth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/auth/OauthAuth.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/auth/OauthAuth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/controller/v1/Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/controller/v1/Auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/controller/v1/Base.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/controller/v1/Base.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/controller/v1/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/controller/v1/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/api/controller/v1/text.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/controller/v1/text.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/controller/v2/Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/controller/v2/Auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/controller/v2/Base.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/controller/v2/Base.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/controller/v2/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/controller/v2/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/controller/v2/text.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/controller/v2/text.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/model/OsaUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/model/OsaUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/route.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/route.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/public/.htaccess" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/admin/admin_thumb/20180723/67890bfbdd48512be87a40a6ac7b4b3e.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/admin/admin_thumb/20180723/67890bfbdd48512be87a40a6ac7b4b3e.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/admin/article_thumb/20180710/7357c2dd332721133e87dc9cc825e5a7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/admin/article_thumb/20180710/7357c2dd332721133e87dc9cc825e5a7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/admin/article_thumb/20180710/c486f3d7555362a5d4d9ba62fa3ecaa9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/admin/article_thumb/20180710/c486f3d7555362a5d4d9ba62fa3ecaa9.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/admin/article_thumb/20180725/0bcd92c1232a56905f1ac8feb33d20f1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/admin/article_thumb/20180725/0bcd92c1232a56905f1ac8feb33d20f1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/admin/article_thumb/20180725/da64bcb9c39455bbcccca761d66fff4d.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/admin/article_thumb/20180725/da64bcb9c39455bbcccca761d66fff4d.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/admin/article_thumb/20180726/01a670a76e5edd90e01e0a4be2b7955d.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/admin/article_thumb/20180726/01a670a76e5edd90e01e0a4be2b7955d.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/admin/article_thumb/20180726/2fe68ffbf053e6d4b0e2814e562fdf13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/admin/article_thumb/20180726/2fe68ffbf053e6d4b0e2814e562fdf13.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/admin/article_thumb/20180726/3bb2b3e42d982bfaf01e3cae8298cb43.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/admin/article_thumb/20180726/3bb2b3e42d982bfaf01e3cae8298cb43.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/admin/article_thumb/20180726/769076ffb6080878cf59147ad0096928.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/admin/article_thumb/20180726/769076ffb6080878cf59147ad0096928.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/admin/article_thumb/20180726/9110065c58b158c61ef625f1d4c42c12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/admin/article_thumb/20180726/9110065c58b158c61ef625f1d4c42c12.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/admin/article_thumb/20180726/95547e8c52121afc6e82a2c84554d1f0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/admin/article_thumb/20180726/95547e8c52121afc6e82a2c84554d1f0.jpg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -60,23 +16,76 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="route.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/route.php">
+      <file leaf-file-name="text.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/api/controller/v1/text.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-              <folding>
-                <element signature="e#6#80#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="240">
+              <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/database.php">
+      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/api/controller/v1/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+            <state relative-caret-position="533">
+              <caret line="165" column="10" lean-forward="true" selection-start-line="165" selection-start-column="10" selection-end-line="165" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Auth.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/api/controller/v1/Auth.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="OauthAuth.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/api/auth/OauthAuth.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3787" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BasicAuth.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/api/auth/BasicAuth.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="744">
+              <caret line="38" column="37" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Doc.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/DawnApi/facade/Doc.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="ApiController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/DawnApi/facade/ApiController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-5644" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Factory.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/DawnApi/facade/Factory.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="Send.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/DawnApi/facade/Send.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="490">
+              <caret line="94" column="38" lean-forward="true" selection-start-line="94" selection-start-column="38" selection-end-line="94" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Base.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/api/controller/v1/Base.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -91,6 +100,7 @@
       <list>
         <option value="$PROJECT_DIR$/app/route.php" />
         <option value="$PROJECT_DIR$/app/database.php" />
+        <option value="$PROJECT_DIR$/app/api/controller/v1/text.php" />
       </list>
     </option>
   </component>
@@ -143,6 +153,29 @@
               <item name="book.cn" type="b2602c69:ProjectViewProjectNode" />
               <item name="book.cn" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="book.cn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="book.cn" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="book.cn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="book.cn" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="book.cn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="book.cn" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="book.cn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="book.cn" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -182,7 +215,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1392000" />
+    <option name="totallyTimeSpent" value="2718000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -253,6 +286,19 @@
     <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/robots.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/route.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="552">
@@ -263,10 +309,119 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/command.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/view/common/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-75" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/common.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2698" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="56" column="40" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/controller/Common.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-803" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+        <state relative-caret-position="528">
+          <caret line="30" column="12" lean-forward="true" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/router.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="e#6#80#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/route.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+          <folding>
+            <element signature="e#6#80#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/DawnApi/auth/Basic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="13" column="4" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+          <folding>
+            <element signature="e#470#504#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/api/controller/v1/text.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/api/controller/v1/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="165" column="10" lean-forward="true" selection-start-line="165" selection-start-column="10" selection-end-line="165" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/api/controller/v1/Base.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/api/controller/v1/Auth.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/api/auth/OauthAuth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3787" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/api/auth/BasicAuth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="744">
+          <caret line="38" column="37" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/DawnApi/facade/Doc.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/DawnApi/facade/ApiController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5644" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/DawnApi/facade/Factory.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/DawnApi/facade/Send.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="94" column="38" lean-forward="true" selection-start-line="94" selection-start-column="38" selection-end-line="94" selection-end-column="38" />
         </state>
       </provider>
     </entry>
