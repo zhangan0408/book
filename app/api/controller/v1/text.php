@@ -13,6 +13,7 @@ class text extends Base
 {
     public function index()
     {
-       return db('admin')->select()->toArray();
+        $info = db('admin')->select();
+       return $this->sendSuccess($info);
     }
 }

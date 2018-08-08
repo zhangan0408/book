@@ -26,24 +26,42 @@ class Excel extends Permissions
      */
     public function index()
     {
-        import('PHPExcel.Classes.PHPExcel.IOFactory');
+        //import('PHPExcel.Classes.PHPExcel.IOFactory');
         if(request()->isPost()){
-            $file = $_FILES['excel'];
-            if($file['error'] == 4){
-                return $this->error('请选择文件');
-            }
-            $file_types = explode(".", $file['name']); // ["name"] => string(25) "excel文件名.xls"
-            $file_type = $file_types [count($file_types) - 1];//xls后缀
+            //$file = $this->request->file('excel');
+            //$file = $_FILES['excel'];
+            //$info = $file->move(ROOT_PATH . 'public' . DS . 'uploads');
+            //if(empty($file)){
+                //return $this->error('上传文件为空');
+            //}
+            //$file_types = explode(".", $file['name']); // ["name"] => string(25) "excel文件名.xls"
+            //$file_type = $file_types [count($file_types) - 1];//xls后缀
             /*判别是不是.xls文件，判别是不是excel文件*/
-            if (strtolower($file_type) != "xls" && strtolower($file_type) != "xlsx") {
-                return $this->error('不是Excel文件，重新上传');
+            //if (strtolower($file_type) != "xls" && strtolower($file_type) != "xlsx") {
+                //return $this->error('不是Excel文件，重新上传');
+            //}
+            //$PHPExcel_IOFactory = new \PHPExcel_IOFactory();
+            //$objPHPExcel = $PHPExcel_IOFactory->load($file['tmp_name']);//读取上传的文件
+            //$arrExcel = $objPHPExcel->getSheet(0)->toArray();//获取其中的数据
+            //array_shift($arrExcel);
+            //print_r($arrExcel);die;
+            $bid = $this->request->post('nbook');
+            $file = $_FILES['excel'];
+            //dump($file);die;
+            if ($file['error']) {
+                $this->error('上传文件未');
             }
-            $PHPExcel_IOFactory = new \PHPExcel_IOFactory();
-            $objPHPExcel = $PHPExcel_IOFactory->load($file['tmp_name']);//读取上传的文件
-            $arrExcel = $objPHPExcel->getSheet(0)->toArray();//获取其中的数据
-            array_shift($arrExcel);
-            print_r($arrExcel);die;
+            $info = file_get_contents($file['tmp_name'],0);
+            $data = ['book_id'=>$bid,'content'=>$info];
+            $re = Db::name('book_content')->insert($data);
+            if ($re) {
+                $this->success('加入成功');
+            } else {
+                $this->error('加入失败');
+            }
         }
+        $book = Db::name('book')->field('id,title')->select();
+        $this->assign('book',$book);
         return $this->fetch();
     }
 }

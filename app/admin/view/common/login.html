@@ -18,8 +18,8 @@
 
   <div class="layadmin-user-login-main">
     <div class="layadmin-user-login-box layadmin-user-login-header">
-      <h2>Tplay后台管理框架</h2>
-      <p>体验ThinkPHP5+Layui2的极速双飞快感</p>
+      <h2>小说后台管理</h2>
+      <!-- <p>体验ThinkPHP5+Layui2的极速双飞快感</p> -->
     </div>
     <div class="layadmin-user-login-box layadmin-user-login-body layui-form">
       <form class="layui-form" id="login">
@@ -39,7 +39,8 @@
           <input type="checkbox" lay-skin="primary" title="记住账号" name="remember" value="1" {notempty name="usermember"}checked=""{/notempty}><div class="layui-unselect layui-form-checkbox" lay-skin="primary"><span>记住账号?</span><i class="layui-icon"></i></div>
         </div>
         <div class="layui-form-item">
-          <button class="layui-btn layui-btn-fluid" lay-submit lay-filter="login">登 入</button>
+          <button class="layui-btn btn" lay-submit lay-filter="login" style="margin-right:19%;">登 录</button>
+          <a href="{:url('admin/common/register')}" class="layui-btn layui-btn-warm">还没有账号?点击去注册!</a>
         </div>
         {:token('__token__', 'sha1')}
       </form>

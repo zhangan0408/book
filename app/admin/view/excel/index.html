@@ -22,12 +22,27 @@
     <div style="margin-top: 20px;">
     </div>
     <form class="layui-form" id="admin" method="post" enctype="multipart/form-data" action="{:url('admin/excel/index')}">
+
+
       <div class="layui-form-item">
         <label class="layui-form-label">xls/xlsx文件</label>
         <div class="layui-input-block" style="max-width:600px;">
           <input type="file" name="excel" >
         </div>
-      </div>   
+      </div>
+
+      <div class="layui-form-item">
+        <label class="layui-form-label">小说选择</label>
+        <div class="layui-input-block" style="width: 170px">
+          <select name="nbook" lay-filter="" >
+            <option value=""></option>
+              {volist name="book" id="vo"}
+            <option value="{$vo.id}">{$vo.title}</option>
+              {/volist}
+          </select>
+        </div>
+      </div>
+
       <div class="layui-form-item">
         <div class="layui-input-block">
           <button class="layui-btn" lay-submit lay-filter="admin">立即提交</button>
@@ -39,7 +54,7 @@
 
     <script src="__PUBLIC__/layui/layui.js"></script>
     <script src="__PUBLIC__/jquery/jquery.min.js"></script>
-    <!-- <script>
+   <script>
         var message;
         layui.config({
             base: '__JS__/',
@@ -55,8 +70,8 @@
                 type: 'iframe'
             }).init();
         });
-    </script> -->
-    
+    </script>
+
   </div>
 </body>
 </html>

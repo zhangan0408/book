@@ -144,6 +144,127 @@ class Common extends Controller
     }
 
     /**
+     * 注册
+     * @return [type] [description]
+     */
+    public function register()
+    {
+        //之前phone改为name
+        if($this->request->isPost()) {
+            //是登录操作
+            $post = $this->request->post();
+            //验证部分数据合法性
+            if (!$post['nickname'] || !$post['name'] || !$post['password'] || !$post['code']) {
+                return $this->error('提交失败：输入的信息不能为空');
+            }
+            // dump($post);die;
+            //取出cookie中的验证码与手机号码
+            if(Cookie::has('code')){
+                $cookieCode = Cookie::get('code');
+            }
+            if(Cookie::has('phone')){
+                $cookiePhone = Cookie::get('phone');
+            }
+            if($cookieCode !== $post['code']){
+                return $this->error('提交失败：验证码不正确');
+            }
+            if($cookiePhone !== $post['name']){
+                return $this->error('提交失败：手机号码与接收验证码手机不匹配');
+            }
+            $findName = Db::name('admin')->where('nickname',$post['nickname'])->find();
+            if(empty($findName)) {
+                $findPhone = Db::name('admin')->where('name',$post['name'])->find();
+                if(!empty($findPhone)){
+                    return $this->error('该手机号码已注册');
+                }
+                //验证成功
+                // $data = $post;
+                $post['password'] = password($post['password']);
+                unset($post['code']);
+                $post['admin_cate_id'] = 20;
+                $post['create_time'] = time();
+                $insertId = Db::name('admin')->insert($post);
+                if($insertId){
+                    Cookie::delete('phone');
+                    Cookie::delete('code');
+                    return $this->success('注册成功,正在跳转登录页...','admin/common/login');
+                }else{
+                    return $this->error('注册失败,请重新注册...');
+                }
+                //验证密码
+                // $post['password'] = password($post['password']);
+                // if($name['password'] != $post['password']) {
+                //     return $this->error('密码错误');
+                // } else {
+                //     //是否记住账号
+                //     if(!empty($post['remember']) and $post['remember'] == 1) {
+                //         //检查当前有没有记住的账号
+                //         if(Cookie::has('usermember')) {
+                //             Cookie::delete('usermember');
+                //         }
+                //         //保存新的
+                //         Cookie::forever('usermember',$post['name']);
+                //     } else {
+                //         //未选择记住账号，或属于取消操作
+                //         if(Cookie::has('usermember')) {
+                //             Cookie::delete('usermember');
+                //         }
+                //     }
+                //     Session::set("admin",$name['id']); //保存新的
+                //     Session::set("admin_cate_id",$name['admin_cate_id']); //保存新的
+                //     //记录登录时间和ip
+                //     Db::name('admin')->where('id',$name['id'])->update(['login_ip' =>  $this->request->ip(),'login_time' => time()]);
+                //     //记录操作日志
+                //     addlog();
+                //     return $this->success('登录成功,正在跳转...','admin/index/index');
+                // }
+            } else {
+                //存在该用户名
+                return $this->error('该昵称已存在');
+            }
+        } else {
+            return $this->fetch();
+        }
+    }
+
+    /**
+     * 发送验证码
+     * @return [type] [description]
+     */
+    public function sendCode()
+    {
+        if($this->request->isPost()) {
+            //是请求验证码
+            $post = $this->request->post();
+            //验证  唯一规则： 表名，字段名，排除主键值，主键名
+            $validate = new \think\Validate([
+                ['phone', 'require', '手机不能为空'],
+            ]);
+            //验证部分数据合法性
+            if (!$validate->check($post)) {
+                return json(array('code'=>'0','msg'=>'发送失败，手机不能为空'));
+                // $this->error('发送失败：' . $validate->getError());
+            }
+
+            if(!preg_match("/^1[34578]\d{9}$/ims", $post['phone'])){
+                return json(array('code'=>'0','msg'=>'发送失败，请输入正确的手机号'));
+            }
+            //生成随机验证码
+            $data['code'] = rand(1000,9999);
+            //保存验证码与手机
+            Cookie::forever('code',$data['code']);
+            Cookie::forever('phone',$post['phone']);
+            return json(array('code'=>'1','msg'=>'发送成功','data'=>$data));
+        } else {
+            // if(Cookie::has('usermember')) {
+            //     $this->assign('usermember',Cookie::get('usermember'));
+            // }
+            // return $this->fetch();
+            return json(array('code'=>'0','msg'=>'顽皮!!!'));
+        }
+    }
+
+    /**
      * 管理员退出，清除名字为admin的session
      * @return [type] [description]
      */
