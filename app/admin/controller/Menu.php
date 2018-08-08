@@ -19,6 +19,8 @@ use think\Db;
 use \think\Cookie;
 use app\admin\controller\Permissions;
 use app\admin\model\AdminMenu as menuModel;
+use think\Session;
+
 class Menu extends Permissions
 {
     public function index()

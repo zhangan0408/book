@@ -80,7 +80,6 @@
           <td>{if condition="$vo.is_look eq 1"}<span class="layui-badge">管理员已阅</span>{else /}<span class="layui-badge layui-bg-orange">管理员待阅</span>{/if}</td>
           <td class="operation-menu">
             <div class="layui-btn-group">
-              <a href="{:url('admin/tomessages/publish',['id'=>$vo.id])}" class="layui-btn layui-btn-xs a_menu layui-btn-primary" id="{$vo.id}" style="margin-right: 0;font-size:12px;"><i class="layui-icon"></i></a>
               <a href="javascript:;" class="layui-btn layui-btn-xs look layui-btn-primary" data-id="{$vo.id}" style="margin-right: 0;font-size:12px;"><i class="fa {if condition="$vo.is_look eq 1"}fa-toggle-on{else /}fa-toggle-off{/if}"></i></a>
               <a href="javascript:;" class="layui-btn layui-btn-xs layui-btn-primary delete" id="{$vo.id}" style="margin-right: 0;font-size:12px;"><i class="layui-icon"></i></a>
             </div>

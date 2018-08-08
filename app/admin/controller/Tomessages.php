@@ -46,44 +46,36 @@ class Tomessages extends Permissions
     public function publish()
     {
     	$model = new Messages();
-		$id = $this->request->has('id') ? $this->request->param('id', 0, 'intval') : 0;
-		if ($id > 0) {
-            //是新增操作
-            if ($this->request->isPost()) {
-                //是提交操作
-                $post = $this->request->post();
-                //验证  唯一规则： 表名，字段名，排除主键值，主键名
-                $validate = new \think\Validate([
-                    ['message', 'require|length:0,200', '回复不能为空'],
-                ]);
-                //验证部分数据合法性
-                if (!$validate->check($post)) {
-                    $this->error('提交失败：' . $validate->getError());
-                }
-                //设置创建人
-                //$post['ip'] = $this->request->ip();
-                if (false == DB::name('messages')->where('id',$post['id'])->update(['reply'=>$post['message']])) {
-                    return $this->error('提交失败');
-                } else {
-                    //addlog($model->id);//写入日志
-                    return $this->success('提交成功', 'admin/tomessages/index');
-                }
-            } else {
-                $message = $model->where('id',$id)->find();
-
-                $this->assign('message',$message);
-                //非提交操作
-                return $this->fetch();
+		
+		//是新增操作
+		if($this->request->isPost()) {
+			//是提交操作
+			$post = $this->request->post();
+			//验证  唯一规则： 表名，字段名，排除主键值，主键名
+            $validate = new \think\Validate([
+                ['message', 'require|length:20,200', '留言不能为空|请输入10-100个字的建议'],
+            ]);
+            //验证部分数据合法性
+            if (!$validate->check($post)) {
+                $this->error('提交失败：' . $validate->getError());
             }
-        }else {
-            return $this->error('id不正确');
-        }
+            //设置创建人
+            $post['ip'] = $this->request->ip();
+            if(false == $model->allowField(true)->save($post)) {
+            	return $this->error('提交失败');
+            } else {
+                addlog($model->id);//写入日志
+            	return $this->success('提交成功','admin/tomessages/index');
+            }
+		} else {
+			//非提交操作
+			return $this->fetch();
+		}
     }
 
 
     public function mark()
     {
-
         //获取id
         $id = $this->request->has('id') ? $this->request->param('id', 0, 'intval') : 0;
         $model = new Messages();
