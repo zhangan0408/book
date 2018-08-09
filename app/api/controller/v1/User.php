@@ -1,173 +1,92 @@
 <?php
-// +----------------------------------------------------------------------
-// | When work is a pleasure, life is a joy!
-// +----------------------------------------------------------------------
-// | User: ShouKun Liu  |  Email:24147287@qq.com  | Time:2017/3/26 13:26
-// +----------------------------------------------------------------------
-// | TITLE: 用户接口
-// +----------------------------------------------------------------------
 
 namespace app\api\controller\v1;
 
-
+use think\Controller;
 use think\Request;
+use app\api\controller\Api;
+use think\Response;
+use app\api\controller\UnauthorizedException;
+
 /**
- * Class User
- * @title 用户接口
- * @url  http://dawn-api.com/v1/user
- * @desc  用户信息相关接口
- * @version 1.0
- * @readme /doc/md/user.md
+ * 所有资源类接都必须继承基类控制器
+ * 基类控制器提供了基础的验证，包含app_token,请求时间，请求是否合法的一系列的验证
+ * 在所有子类中可以调用$this->clientInfo对象访问请求客户端信息，返回为一个数组
+ * 在具体资源方法中，不需要再依赖注入，直接调用$this->request返回为请具体信息的一个对象
  */
-class User extends Base
-{
-    //是否开启授权认证
-    public $apiAuth = true;
-    //附加方法
-    protected $extraActionList = ['sendCode'];
-    //跳过鉴权的方法
-    protected $skipAuthActionList = ['sendCode'];
+class User extends Api
+{   
     /**
-     * @title 发送CODE
-     * @readme /doc/md/method.md
+     * 允许访问的方式列表，资源数组如果没有对应的方式列表，请不要把该方法写上，如user这个资源，客户端没有delete操作
      */
-    public function sendCode()
-    {
-        //send message
-        return $this->sendSuccess(['code'=>123]);
+    public $restMethodList = 'get|post|put';
 
-    }
 
     /**
-     * @title 获取列表
-     * @return string name 名字
-     * @return string id  id
-     * @return integer age  年龄
-     * @readme /doc/md/method.md
+     * restful没有任何参数
+     *
+     * @return \think\Response
      */
     public function index()
     {
-        return $this->sendSuccess(self::testUserData());
-        //return json(self::testUserData());
 
-    }
-
-
-    /**
-     * @title 创建用户
-     * @param Request $request
-     * @return string name 名字
-     * @return string id  id
-     * @return object user  用户信息
-     * @readme /doc/md/method.md
-     * @param  \think\Request $request
-     */
-    public function save(Request $request)
-    {
-        $data = $request->input();
-        // db save
-        $data['id'] = 4;
-        return $this->sendSuccess($data);
-
+        return 'index';
     }
 
     /**
-     * @title 获取单个用户信息
-     * @param  int $id
-     * @return string name 名字
-     * @return string id  id
-     * @return object user  用户信息
-     * @readme /doc/md/method.md
-     * @return \think\Response
-     */
-    public function read($id)
-    {
-        //
-        $testUserData = self::testUserData();
-        return $this->sendSuccess($testUserData[$id]);
-    }
-
-    /**
-     * 保存更新的资源
+     * post方式
      *
-     * @param  \think\Request $request
-     * @param  int $id
-     * @param  int $id
-     * @title 更新用户
-     * @return string name 名字
-     * @return string id  id
-     * @readme /doc/md/method.md
+     * @param  \think\Request  $request
      * @return \think\Response
      */
-    public function update(Request $request, $id)
+    public function save()
     {
-        //
-        $testUserData = self::testUserData();
-        $data = $testUserData[$id];
-        //更新
-        $data['age'] = $request->param('age');
-
-        return $this->sendSuccess($data);
+       echo 'save';
+       dump($this->request);
+       dump($this->clientInfo);
     }
 
     /**
-     * 删除指定资源
+     * get方式
      *
-     * @param  int $id
-     * @return object user  用户信息
-     * @title 删除用户
+     * @param  int  $id
      * @return \think\Response
      */
-    public function delete($id)
-    {
-        $testUserData = self::testUserData();
-
-        // delete
-        $user = $testUserData[$id];
-        unset($testUserData[$id]);
-        return $this->sendSuccess(['user' => $user], 'User deleted.');
+    public function read()
+    {   
+       echo 'get';
+       dump($this->request);
+       dump($this->clientInfo);
     }
-
-
-    public function testUserData()
-    {
-       return db('osa_user')->select();
-
-    }
-
-
-
-
 
     /**
-     * 参数规则
-     * @name 字段名称
-     * @type 类型
-     * @require 是否必须
-     * @default 默认值
-     * @desc 说明
-     * @range 范围
-     * @return array
+     * PUT方式
+     *
+     * @param  \think\Request  $request
+     * @param  int  $id
+     * @return \think\Response
      */
-    public static function getRules()
+    public function update()
     {
-        $rules = [
-            'index' => [
-            ],
-            'create' => [
-                'name' => ['name' => 'name', 'type' => 'string', 'require' => 'true', 'default' => '', 'desc' => '名称', 'range' => '',],
-                'age' => ['name' => 'age', 'type' => 'string', 'require' => 'true', 'default' => '', 'desc' => '年龄', 'range' => '',],
-            ],
-            'sendCode' => [
-                'name' => ['name' => 'name', 'type' => 'string', 'require' => 'true', 'default' => '', 'desc' => '名称', 'range' => '',],
-                'age' => ['name' => 'age', 'type' => 'string', 'require' => 'true', 'default' => '', 'desc' => '年龄', 'range' => '',],
-            ]
-
-        ];
-        //可以合并公共参数
-        return $rules;
-
+        return 'update';
     }
 
+    /**
+     * delete方式
+     *
+     * @param  int  $id
+     * @return \think\Response
+     */
+    public function delete()
+    {
+        return 'delete';
+    }
 
+    /**
+     * 获取除资源方法外的方法
+     */
+    public function fans($id)
+    {
+        return $id;
+    }
 }

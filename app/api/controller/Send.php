@@ -1,19 +1,21 @@
 <?php
-// +----------------------------------------------------------------------
-// | When work is a pleasure, life is a joy!
-// +----------------------------------------------------------------------
-// | User: ShouKun Liu  |  Email:24147287@qq.com  | Time:2017/3/11 10:56
-// +----------------------------------------------------------------------
-// | TITLE: 发送响应
-// +----------------------------------------------------------------------
-namespace DawnApi\facade;
+/**
+ * 向客户端发送相应基类
+ */
+namespace app\api\controller;
 
 use think\Response;
 use think\response\Redirect;
 
 trait Send
 {
+
+    /**
+     * 默认返回资源类型
+     * @var string
+     */
     protected $restDefaultType = 'json';
+
     /**
      * 设置响应类型
      * @param null $type
@@ -41,8 +43,7 @@ trait Send
         $responseData['message'] = (string)$message;
         if (!empty($data)) $responseData['data'] = $data;
         $responseData = array_merge($responseData, $options);
-
-        return $this->response($responseData, $code, $headers,$options);
+        return $this->response($responseData, $code, $headers);
     }
 
     /**
@@ -60,7 +61,7 @@ trait Send
         $responseData['message'] = (string)$message;
         if (!empty($data)) $responseData['data'] = $data;
         $responseData = array_merge($responseData, $options);
-        return $this->response($responseData, $code, $headers,$options);
+        return $this->response($responseData, $code, $headers);
     }
 
     /**
@@ -81,21 +82,41 @@ trait Send
         $response->code($code)->params($params)->with($with);
         return $response;
     }
+
     /**
      * 响应
      * @param $responseData
      * @param $code
      * @param $headers
-     * @param $options
      * @return Response|\think\response\Json|\think\response\Jsonp|Redirect|\think\response\View|\think\response\Xml
      */
-    public function response($responseData, $code, $headers,$options)
+    public function response($responseData, $code, $headers)
     {
-
         if (!isset($this->type) || empty($this->type)) $this->setType();
-        return Response::create($responseData,$this->type, $code, $headers,$options);
+        return Response::create($responseData, $this->type, $code, $headers);
     }
 
-
-
+    /**
+     * 如果需要允许跨域请求，请在记录处理跨域options请求问题，并且返回200，以便后续请求，这里需要返回几个头部。。
+     * @param code 状态码
+     * @param message 返回信息
+     * @param data 返回信息
+     * @param header 返回头部信息
+     */
+    public function returnmsg($code = '400', $message = '',$data = [],$header = [])
+    {	
+    	http_response_code($code);    //设置返回头部
+    	$return['code'] = $code;
+    	$return['message'] = $message;
+    	if (!empty($data)) $return['data'] = $data;
+    	// 发送头部信息
+        foreach ($header as $name => $val) {
+            if (is_null($val)) {
+                header($name);
+            } else {
+                header($name . ':' . $val);
+            }
+        }
+    	exit(json_encode($return,JSON_UNESCAPED_UNICODE));
+    }
 }
