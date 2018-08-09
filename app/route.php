@@ -9,16 +9,22 @@
 // | Author: 听雨 < 389625819@qq.com >
 // +----------------------------------------------------------------------
 
-
+use think\Route;
 
 //url美化 例：Route::rule('blog/:id','index/blog/read');
 $url = \think\Db::name("urlconfig")->where(['status' => 1])->column('aliases,url');
 foreach ($url as $k => $val) {
-	\think\Route::rule($k,$val);
+	Route::rule($k,$val);
 }
-
-
+Route::resource(':version/user','api/:version.User');   //注册一个资源路由，对应restful各个方法,.为目录
+//
+Route::rule(':version/user/:id/fans','api/:version.User/fans'); //restful方法中除restful api外的其他方法路由
+//Route::rule(':version/token/wechat','api/:version.Token/wechat');
+Route::rule(':version/token/mobile','api/:version.Token/mobile');
 return [
+    // api版本路由
+    //'api/:version/:controller'=>'api/:version.:controller/index',// 省略方法名时
+    //'api/:version/:controller/:function'=>'api/:version.:controller/:function',// 有方法名时
     '__pattern__' => [
         'name' => '\w+',
     ],
