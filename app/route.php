@@ -21,10 +21,14 @@ Route::resource(':version/user','api/:version.User');   //注册一个资源路�
 Route::rule(':version/user/:id/fans','api/:version.User/fans'); //restful方法中除restful api外的其他方法路由
 //Route::rule(':version/token/wechat','api/:version.Token/wechat');
 Route::rule(':version/token/mobile','api/:version.Token/mobile');
+//首页展示
+Route::resource(':version/index','api/:version.Index');
+
+
 return [
     // api版本路由
-    //'api/:version/:controller'=>'api/:version.:controller/index',// 省略方法名时
-    //'api/:version/:controller/:function'=>'api/:version.:controller/:function',// 有方法名时
+    'api/:version/:controller'=>'api/:version.:controller/index',// 省略方法名时
+    'api/:version/:controller/:function'=>'api/:version.:controller/:function',// 有方法名时
     '__pattern__' => [
         'name' => '\w+',
     ],

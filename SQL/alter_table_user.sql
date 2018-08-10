@@ -1,0 +1,1 @@
+ALTER TABLE `tplay_user` ADD COLUMN `shelf` varchar(255) COMMENT '书架' AFTER `login_ip`;

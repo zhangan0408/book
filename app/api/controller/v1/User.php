@@ -19,7 +19,7 @@ class User extends Api
     /**
      * 允许访问的方式列表，资源数组如果没有对应的方式列表，请不要把该方法写上，如user这个资源，客户端没有delete操作
      */
-    public $restMethodList = 'get|post|put';
+    public $restMethodList = 'get|post|put|delete';
 
 
     /**
