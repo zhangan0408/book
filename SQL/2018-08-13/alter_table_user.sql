@@ -1,0 +1,1 @@
+ALTER TABLE `tplay_user` ADD COLUMN `money` int(11) NOT NULL DEFAULT 0 COMMENT '熊猫币' AFTER `login_ip`;
